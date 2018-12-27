@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { RetmenGiriIPage } from '../retmen-giri-i/retmen-giri-i';
-import { RetmenPaneliPage } from '../retmen-paneli/retmen-paneli';
-import { RenciListesiPage } from '../renci-listesi/renci-listesi';
-import { RenciGiriIPage } from '../renci-giri-i/renci-giri-i';
 import { RenciPaneliPage } from '../renci-paneli/renci-paneli';
 import { DersListesiPage } from '../ders-listesi/ders-listesi';
 import { MobilUygulamaGeliTirmePage } from '../mobil-uygulama-geli-tirme/mobil-uygulama-geli-tirme';
@@ -16,26 +12,14 @@ import { StatistikVeOlasLKPage } from '../statistik-ve-olas-lk/statistik-ve-olas
 import { DiferansiyelDenklemlerPage } from '../diferansiyel-denklemler/diferansiyel-denklemler';
 
 @Component({
-  selector: 'page-anasayfa',
-  templateUrl: 'anasayfa.html'
+  selector: 'page-renci-giri-i',
+  templateUrl: 'renci-giri-i.html'
 })
-export class AnasayfaPage {
+export class RenciGiriIPage {
 
   constructor(public navCtrl: NavController) {
   }
-  goToRetmenGiriI(params){
-    if (!params) params = {};
-    this.navCtrl.push(RetmenGiriIPage);
-  }goToRetmenPaneli(params){
-    if (!params) params = {};
-    this.navCtrl.push(RetmenPaneliPage);
-  }goToRenciListesi(params){
-    if (!params) params = {};
-    this.navCtrl.push(RenciListesiPage);
-  }goToRenciGiriI(params){
-    if (!params) params = {};
-    this.navCtrl.push(RenciGiriIPage);
-  }goToRenciPaneli(params){
+  goToRenciPaneli(params){
     if (!params) params = {};
     this.navCtrl.push(RenciPaneliPage);
   }goToDersListesi(params){
